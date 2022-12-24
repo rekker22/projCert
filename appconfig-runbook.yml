@@ -19,19 +19,3 @@
       pip:
         name: docker-py
         state: present
-
-    - name: start docker
-      service:
-        name: docker
-        state: started
-        enabled: yes
-
-    - name: Run Docker container using php-demo-website
-      docker_container:
-        name: php-demo-website
-        image: rekker22/myphpwebsite
-        state: started
-        recreate: yes
-        detach: true
-        ports:
-          - "32780:80"
