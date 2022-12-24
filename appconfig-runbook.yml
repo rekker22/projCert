@@ -34,4 +34,4 @@
         recreate: yes
         detach: true
         ports:
-          - "32780:8080"
+          - "32780:80"
