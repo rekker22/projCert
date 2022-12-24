@@ -1,6 +1,6 @@
 ---
 - name: Playbook to install python and deploy
-  hosts: test_server
+  hosts: server
   become: true
   gather_facts: false
 
