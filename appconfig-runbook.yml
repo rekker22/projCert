@@ -12,12 +12,12 @@
 
     - name: install docker
       yum:
-        name: docker
+        name: docker-ce
         state: present
 
     - name: start docker
       service:
-        name: docker-ce
+        name: docker
         state: started
         enabled: yes
 
