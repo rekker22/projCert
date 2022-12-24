@@ -1,5 +1,5 @@
 ---
-- name: Playbook to install python and deploy
+- name: Runbook to deploy containers
   hosts: server
   become: true
   gather_facts: false
