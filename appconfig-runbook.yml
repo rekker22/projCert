@@ -20,7 +20,7 @@
         name: docker
         state: started
         enabled: yes
-	
+
     - name: Run Docker container using php-demo-website
       docker_container:
         name: php-demo-website
